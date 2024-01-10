@@ -1,4 +1,5 @@
 # Flight-Price-Prediction
+
 In this project, we analyzed the flight prices dataset and performed EDA to discover the hidden patterns, important variables, to know how does the flights tickets are priced.
 
 Introduction:
@@ -36,3 +37,76 @@ d) How the price changes with change in Source and Destination?
 e) How does the ticket price vary between Economy and Business class?
 f) How does the price changes with number of stops in the travel?
 
+
+From the above bar chart, we can observe that Indigo airlines has most number of flights with count 704, second highest is Air_india with 218 followed by GO_FIRST, SpiceJet, Vistara, AirAsia with their respective number of flights.
+
+
+From the above graph, we observe that the price(target) variable is right skewed distributed. For machine learning modelling, we make sure that the target varible is uniformly distributed. We will apply transformations later to it.
+
+Lets dive more into EDA of prices how it varies by different categories
+
+
+We can observe from the above boxplot that ticket prices varies from airlines to airlines. As SpiceJet, AirAsia, GO_FIRST, Indigo have the minimal price difference between them and also contains outliers whereas Vistara and Air_India have the highest and second highest ticket price variations respectively. From this graph we conclude that Vistara and Air_India tickets are expensive to travel compared to four other airlines.
+
+
+From the time series line chart, we can say that prices are very high when the flight depature date approaches. This states the prices will be cheaper when booked in advance like 30 days or more prior to travel date and will be higher from 10 days before. We can also see that prices cut down at 1-day before or at the same travel day, it can be due to last minute vacant seats in the flight, so airlines reduce the prices to fillup those seats instead of unfilled.
+
+
+This time for each airlines of the time series line chart, Vistara and Air_India tickets are expensive before days of depature date when compared to rest of the other airlines.
+
+
+By comparing the boxplots of departure and arrival times, we can observe that the prices for Late_Night times are lowest among the other times. In the Departure times plot, Night time tickets are the highest whereas in arrival times plot, Evening time tickets are highest compared to other times with their respective plots.
+
+
+By comparing the boxplots of Source and Destination cities, we can observe that the prices are almost similar to each other. In both the plots, Kolkata city is a little higher than other cities whereas Delhi city is the lowest. Rest all other cities are having similar or near to same price range.
+
+
+Generally, in any flight there will be more economy class seats than business class seats. So in the above graph, we see that the number of economy class booking options are more than the business class.
+
+
+It is obvious that business class tickets are more expensive than economy class because of its amenties, extra legroom and comfortable seats, food and beverage services and many more features. So this is the reason business class are expensive.
+
+
+Vistara and Air_India are the only two airlines, having the both business and economy class whereas the other having only economy class. Comparing the business class category, Vistara tickets are higher than the other.
+
+
+Most of the flight journeys have one stop. Second is direct flight journey with zero stops followed by two or more stop in the journey.
+
+
+As there are more flights with one stop, the price variation is also high for the one stop flights. Whereas two or more stops is the second highest in terms of price and to my surprise, non-stop flights are cheaper.
+
+
+From the above table, we can observe that from Delhi to Mumbai is having most number flights with 364, followed by Delhi to Bangalore and Delhi to Kolkata with slightly difference of 310 and 306 respectively. Delhi is the most populas source city having more number of flights.
+
+We have taken consideration of both the business and economy class into it and displaying the top 10 average prices from source city to destination city. We see that top are Vistara because of the highly priced business class tickets and outliers, so it resulting into skewness of the mean prices. Interesting point is Kolkate city is appeared 6 times most than other cities. So we consider median as measure of central tendency to elimate it.
+
+
+
+We can observe the change in the ticket prices which is lower than the above table and not a surprise that vistara again dominating the table with 9 entries due to off its business class tickets inclusion as well.
+
+
+From the above heatmap, we can observe that the numerical variables 'duration' and 'days_left_before_flight_takeoff' are slightly and negatively correlated to target variable 'price'. It concludes that the target variable price is not highly affected by those two variables.
+
+## Exploratory Data Analysis Summary
+
+After exploring the flight prices dataset, we have discovered hidden patterns, trends, how the variables are effecting the price, how are the independent variables are coorelated to dependent variables. The following are the summary points after analyzing the flights data.
+
+1. Vistara has the most number of booking options available to travel followed by Air_India because these two airlines accomodating both economy and business class tickets for passengers.
+2. The most number of flights are owned by Indigo with 704 which is 3 times higher than rest of its competitors.
+3. Majority of the ticket prices are in the range of 1500 to 20,000. Some of the ticket prices are exceeding above 30k, 40k to the extreme of 60k, 70k range because of the business class.
+4. Vistara and Air_India airlines ticket prices are expensive to travel compare to other airlines.
+5. Tickets are booked 30 days prior to travel date are least expensive and the prices start climbing before the 10 days of the journey date.
+6. Both the arrival and departure in Night time journey flights are slightly expensive and late nights journey are the cheapest.
+7. As mentioned earlier, travelling to or from Kolkate city is expensive than other airline routes.
+8. Obviously, the business class tickets are higher than economy class because of its amenties provided by the flight crew to its passengers.
+9. One stop flights are the most popular traveling options and has high price variations.
+10. The numerical variables are less effective on the target variable Price.
+
+## Future Outcomes
+1. Will be exploring more into the data by taking considerations of only economy class tickets in all the airlines.
+2. Preprocessing the data by converting the categorical variables into numrical variables.
+3. Performing various techniques to handle the outliers asscoaited with.
+4. Checking the multi-collinearity of the independent variables.
+5. Selecting the prominent features for the Machine Learning modelling.
+6. Implement various ML algorithms and calcualting the scores.
+7. Comparing the scores and selecting the best performing model.

@@ -2,13 +2,13 @@
 
 In this project, we analyzed the flight prices dataset and performed EDA to discover the hidden patterns, important variables, to know how does the flights tickets are priced.
 
-Introduction:
+## Introduction:
 
 In today's dynamic travel landscape, predicting flight prices has become an essential aspect for both travelers seeking cost-effective options and airlines aiming to optimize revenue. The myriad of factors influencing ticket costs, such as seasonality, route popularity, day of the week, and class distinctions, makes flight price prediction a challenging yet valuable endeavor.
 
 In this project, the goal is to leverage data analytics and machine learning techniques to build a robust flight price prediction model. The dataset, likely comprising features like departure and arrival cities, dates, airlines, and possibly more, holds the key to unraveling patterns and trends that contribute to the variability in ticket prices.
 
-Approach:
+## Approach:
 
 Data Collection: Acquire a comprehensive dataset containing historical flight information. This dataset should encompass a diverse range of routes, airlines, and temporal variations to ensure the model captures the complexity of the market.
 
@@ -28,7 +28,7 @@ Deployment: Once satisfied with the model's accuracy, deploy it for real-time pr
 
 By undertaking this project, we aim to provide a valuable tool for travelers and industry stakeholders, enabling them to make informed decisions regarding flight choices and pricing strategies. Through the integration of data analytics and machine learning, we endeavor to bring efficiency and precision to the realm of flight price prediction.
 
-Research Questions
+## Research Questions
 The aim of our study is to answer the below research questions:
 a) Does price vary with Airlines?
 b) How is the price affected when tickets are bought in just 1 or 2 days before departure?
@@ -36,6 +36,8 @@ c) Does ticket price change based on the departure time and arrival time?
 d) How the price changes with change in Source and Destination?
 e) How does the ticket price vary between Economy and Business class?
 f) How does the price changes with number of stops in the travel?
+
+## Exploratory Data Analysis
 
 
 From the above bar chart, we can observe that Indigo airlines has most number of flights with count 704, second highest is Air_india with 218 followed by GO_FIRST, SpiceJet, Vistara, AirAsia with their respective number of flights.

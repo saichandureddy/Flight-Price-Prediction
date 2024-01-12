@@ -1,5 +1,7 @@
 # Flight-Price-Prediction
 
+![](Images/flights.jpg)
+
 In this project, we analyzed the flight prices dataset and performed EDA to discover the hidden patterns, important variables, to know how does the flights tickets are priced.
 
 ## Introduction:
